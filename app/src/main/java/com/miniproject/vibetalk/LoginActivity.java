@@ -48,7 +48,7 @@ public class LoginActivity extends AppCompatActivity {
                     public void onComplete(@NonNull Task<AuthResult> task) {
                         progressDialog.dismiss();
                         if(task.isSuccessful()){
-                            Toast.makeText(LoginActivity.this, "Logged In", Toast.LENGTH_SHORT).show();
+                            startActivity(new Intent(LoginActivity.this,DashboardActivity.class));
                         }
                         else{
                             Toast.makeText(LoginActivity.this, task.getException().getLocalizedMessage(), Toast.LENGTH_SHORT).show();
