@@ -54,7 +54,7 @@
                 android:layout_height="wrap_content"
                 android:layout_margin="10dp"
                 android:background="@drawable/signupbtn_style"
-                android:text="Join/Share"
+                android:text="Join/Create"
                 android:textColor="#FFFFFF" />
 
             <Button
